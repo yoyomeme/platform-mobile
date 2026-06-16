@@ -1,0 +1,9 @@
+# Source-to-wiki page mapping (tab-separated)
+# Format: source_path_prefix<TAB>wiki_page_path
+# When a source file matching the prefix changes, the listed wiki page needs updating.
+# overview.md is always included for any source change (handled by wiki-sync.sh).
+#
+# Examples:
+# src/services/AuthService.kt	services/auth-service.md
+# src/types/	types/auth-types.md
+# src/api/	api/endpoints.md
