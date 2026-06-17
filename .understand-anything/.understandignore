@@ -1,0 +1,107 @@
+# .understandignore — patterns for files/dirs to exclude from analysis
+# Syntax: same as .gitignore (globs, # comments, ! negation, trailing / for dirs)
+# Lines below are suggestions — uncomment to activate.
+# Use ! prefix to force-include something excluded by defaults.
+#
+# Built-in defaults (always excluded unless negated):
+#   node_modules/, .git/, dist/, build/, obj/, *.lock, *.min.js, etc.
+#
+# --- From .gitignore (uncomment to exclude) ---
+
+# Compiled output / build artifacts — NOT source. Excluded so we analyze real source only.
+.heft/
+lib/
+_api-extractor-temp/
+temp/
+types/
+typings/
+tsconfig.tsbuildinfo
+bundle/
+**/bundle/model.json
+common/deploy/
+common/temp/
+**/.rush/temp/
+deploy/
+dump/
+
+# .heft/
+# lib/
+# _api-extractor-temp/
+# temp/
+# pods/workspace/init/
+# pods/workspace/init-scripts/
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
+# *./rush-logs
+# *tests/sanity/screenshots
+# *.pid
+# *.seed
+# *.pid.lock
+# .vscode/settings.json
+# lib-cov
+# .nyc_output
+# .grunt
+# bower_components
+# .lock-wscript
+# build/Release
+# jspm_packages/
+# .npm
+# .eslintcache
+# .node_repl_history
+# *.tgz
+# .yarn-integrity
+# .DS_Store
+# common/deploy/
+# common/temp/
+# common/autoinstallers/*/.npmrc
+# **/.rush/temp/
+# bundle.js
+# bundle/*.js
+# .build
+# typings
+# types
+# .validate
+# tsconfig.tsbuildinfo
+# ingest-attachment-*.zip
+# tsdoc-metadata.json
+# pods/front/dist
+# *.cpuprofile
+# *.pyc
+# metrics.txt
+# dev/tool/report*.csv
+# tests/db_dump
+# .build
+# .format
+# tools/apm/apm.js
+# deploy
+# metrics.txt
+# services/github/pod-github/src/github.graphql
+# .build
+# .format
+# dev/tool/report.csv
+# bundle/*
+# bundle.js.map
+# tests/profiles
+# **/bundle/model.json
+# .wrangler
+# dump
+# **/logs/**
+# dev/tool/history.json
+# .aider*
+# /combined_dependencies
+# .tmp
+# ws-tests/docker-compose.override.yml
+# .cursor/*
+
+# --- Detected directories (uncomment to exclude) ---
+
+# tests/
+# docs/
+# scripts/
+
+# --- Test file patterns (uncomment to exclude) ---
+
+# *.test.*
+# *.spec.*
+# *.snap
